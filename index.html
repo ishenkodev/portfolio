@@ -1,13 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleg Ish — Senior Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation with Hamburger Menu -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Oleg Ish</div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<h1>Hello Portfolio</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in">Oleg Ish</h1>
+                    <p class="fade-in delay-1"><strong>Senior Web Developer</strong> | PHP / Django • Yii2, Zend2, Symfony • WordPress</p>
+                    <p class="fade-in delay-1" style="font-size: 1rem; line-height: 1.7; margin-top: 12px;">Full‑stack development with 13+ years experience. Expertise in PHP (Yii2, Zend, Laravel), Python (Django), Node.js and React. Building scalable web applications, e‑commerce platforms, learning systems, and production-grade infrastructure. I deliver maintainable code and lead engineering teams.</p>
+                    <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-top: 12px;" class="fade-in delay-1">
+                        <strong>Part-time only:</strong> Hourly contracts, sprint-based, or fixed-price milestones · Kyiv-based, remote friendly · Rate: <strong>$45/hr</strong>
+                    </p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-top: 8px;" class="fade-in delay-1">
+                        <strong>Teaching & Mentorship:</strong> 14+ years of teaching, training developers, and helping professionals re-skill into software development.
+                    </p>
+                    <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="#projects" class="btn btn-primary fade-in delay-2">View Projects</a>
+                        <a href="#contact" class="btn link-btn fade-in delay-2">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar fade-in delay-1">
+                        <div class="avatar-placeholder">OI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a href="portfolio/index.html">Перейти в портфолио</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">💻</div>
+                    <h3>Backend</h3>
+                    <p>PHP • Django • Symfony • Laravel • Yii2 • Zend2 • Node.js</p>
+                </div>
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Frontend</h3>
+                    <p>React • JavaScript • HTML5 • CSS3 • API Integration</p>
+                </div>
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <p>MySQL • PostgreSQL • Database Design • Performance Optimization</p>
+                </div>
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Tools & DevOps</h3>
+                    <p>Git • CI/CD • Linux • Migration • Deployment • WordPress</p>
+                </div>
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Web Development</h3>
+                    <p>E-commerce • Web Applications • SEO • Performance Optimization</p>
+                </div>
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">📚</div>
+                    <h3>Mentorship</h3>
+                    <p>14+ years teaching, training developers, re-skilling professionals</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 28px; color: var(--color-text-muted); font-size: 0.95rem;">Languages: Ukrainian (native), Russian (native), English (basic)</p>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item scroll-animate">
+                    <div class="exp-header">
+                        <h3>Senior Web Developer</h3>
+                        <span class="exp-date">2015 — Present</span>
+                    </div>
+                    <p class="exp-company">WebSchool</p>
+                    <p class="exp-desc">Full‑cycle development of scalable web applications. Led engineering teams, performed code reviews, made architecture decisions. Built custom e‑commerce platforms, learning systems, and complex integrations. Expertise in PHP (Yii2, Symfony, Laravel), Python (Django), and Node.js.</p>
+                </div>
+                <div class="experience-item scroll-animate">
+                    <div class="exp-header">
+                        <h3>Senior Software Developer</h3>
+                        <span class="exp-date">2013 — 2015</span>
+                    </div>
+                    <p class="exp-company">Harries Engineering, Dnipro</p>
+                    <p class="exp-desc">Managed IT development team, designed industrial automation systems, built internal CRM. Expertise in database design, OOP architecture, and team leadership. Conducted code reviews and mentored junior developers.</p>
+                </div>
+                <div class="experience-item scroll-animate">
+                    <div class="exp-header">
+                        <h3>Middle PHP Developer</h3>
+                        <span class="exp-date">2010 — 2013</span>
+                    </div>
+                    <p class="exp-company">InterSchool, Dnipro</p>
+                    <p class="exp-desc">Developed e-learning platform with student testing systems and internal CRM. Built responsive web applications using CodeIgniter, MySQL, and jQuery. Focused on backend optimization and database design.</p>
+                </div>
+                <div class="experience-item scroll-animate">
+                    <div class="exp-header">
+                        <h3>Junior Developer</h3>
+                        <span class="exp-date">2007 — 2010</span>
+                    </div>
+                    <p class="exp-company">PrivatBank, Dnipro</p>
+                    <p class="exp-desc">Developed banking terminal software and web interfaces. Optimized payment system modules, built ATM management solutions. Gained foundational expertise in secure, high-performance systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card scroll-animate">
+                    <h3>UWalls — E-commerce Store</h3>
+                    <p>Led backend and frontend delivery — designed scalable product catalog and search, implemented payment integration and inventory sync, improved performance and deployment pipelines.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Full-Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://uwalls.com.ua/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Art-Oboi — E-commerce Platform</h3>
+                    <p>Implemented custom CMS and catalog management, integrated payment and shipping providers, led SEO optimizations and release process, ensured production reliability.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">CMS</span>
+                        <span class="tag">Payment Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://art-oboi.com.ua/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>IT-Lite — Corporate Website</h3>
+                    <p>Built corporate site architecture, implemented REST APIs and CMS integration, enforced security best practices, optimized loading and maintainability for enterprise use.</p>
+                    <div class="project-tags">
+                        <span class="tag">Corporate</span>
+                        <span class="tag">API</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.it-lite.ru/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Videouroki — Learning Platform</h3>
+                    <p>Implemented core platform features and backend APIs (Zend2), designed user/course management, optimized content delivery and performance, led migrations and code reviews.</p>
+                    <div class="project-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Zend2</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://videouroki.net/et/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Webyk — Portfolio Platform</h3>
+                    <p>Built the portfolio platform end‑to‑end, implemented responsive layouts, server‑side rendering for SEO, CI/CD pipelines and analytics, maintained deployment and monitoring.</p>
+                    <div class="project-tags">
+                        <span class="tag">Portfolio</span>
+                        <span class="tag">Full-Stack</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://webyk.in.net" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>3DS.DP.UA — 3D Services Showcase</h3>
+                    <p>Developed service showcase and admin panel to manage 3D content, implemented contact and quotation workflows, applied performance and caching optimizations.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Admin Panel</span>
+                        <span class="tag">Full-Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="http://3ds.dp.ua/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Foto-Lab — Online Ordering System</h3>
+                    <p>Implemented online ordering and image processing integration, built robust payment flows and order management, improved stability and monitoring for production use.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Payment</span>
+                        <span class="tag">Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://foto-lab.com.ua/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Walldeco — International E-commerce</h3>
+                    <p>Implemented international storefront features (multi‑currency, localization), optimized checkout flows, integrated logistics providers, led performance and scalability improvements.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Localization</span>
+                        <span class="tag">Payments</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://walldeco.fr/en/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>WonderMural — Custom Print Platform</h3>
+                    <p>Built custom product configurator for large‑format prints, implemented high‑resolution image handling, bespoke checkout and fulfillment integrations, ensured reliable performance under load.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Custom Product</span>
+                        <span class="tag">Image Processing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://wondermural.com/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Mojatapeta — Wallpaper E-commerce</h3>
+                    <p>Implemented localized storefront, catalog and SEO optimizations, integrated payments and shipping, managed releases and site reliability improvements.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Design</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mojatapeta.pl/?srsltid=AfmBOorP2uNTEkItIHt0j_nyD7l7-RkzdqMfp_smncoTnTsX68FxWxsP" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-card scroll-animate">
+                    <h3>Spalerna — Beauty & Wellness Store</h3>
+                    <p>Led full‑stack delivery — designed scalable product catalog, integrated secure payment gateways, implemented inventory and order workflows, optimized performance and conducted final QA.</p>
+                    <div class="project-tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Payments</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://spalerna.com/" class="link-btn" target="_blank">Live Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get in Touch</h2>
+            <p class="contact-intro fade-in">Available for part‑time projects, consulting, and mentorship. I follow a clear workflow: estimate → development → testing → deployment. Send me a message and I'll respond within 24 hours.</p>
+            
+            <form class="contact-form fade-in" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+
+            <div class="contact-links">
+                <a href="mailto:isholegg@gmail.com" class="contact-link">Email: isholegg@gmail.com</a>
+                <a href="https://www.linkedin.com/in/oleg-ish-046b01297" target="_blank" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Oleg Ish — Senior Web Developer. Available for part-time collaborations.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
